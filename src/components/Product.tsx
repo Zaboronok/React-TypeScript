@@ -22,8 +22,8 @@ export function Product({ product }: ProductProps) {
             </button>
             {details && <div>
                 <p>{product.description}</p>
+                {product.rating && <p>Rate: <span className='font-bold'>{product.rating?.rate}</span></p>}
             </div>}
-
         </div>
     )
 }
